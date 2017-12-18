@@ -32,6 +32,6 @@ public class FarmerWithAShotgun extends Pokemon implements Ice, Normal
 	}
 	public String iceBeam()
 	{
-		return "Throws of beam of ice bucket challenges at the opponent.";
+		return "Throws a beam of ice bucket challenges at the opponent.";
 	}
 }
