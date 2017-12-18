@@ -28,7 +28,7 @@ public class MultiHyperRareGodArceusThriceBlessedHolyGoat extends FarmerWithASho
 	}
 	public String blizzard()
 	{
-		return "Makes the opponents kids complain about it being too cold.";
+		return "Makes the opponent's kids complain about it being too cold.";
 	}
 	public String iceBeam()
 	{
