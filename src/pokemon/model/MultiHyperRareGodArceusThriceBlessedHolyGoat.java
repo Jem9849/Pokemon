@@ -2,9 +2,29 @@ package pokemon.model;
 
 public class MultiHyperRareGodArceusThriceBlessedHolyGoat extends FarmerWithAShotgun implements Ice, Fire
 {
+	public MultiHyperRareGodArceusThriceBlessedHolyGoat()
+	{
+		super(5000, "MultiHyperRareGodArceusThriceBlessedHolyGoat");
+		setup();
+	}
+	
+	public MultiHyperRareGodArceusThriceBlessedHolyGoat(String name)
+	{
+		super(5000, name);
+		setup();
+	}
 	public MultiHyperRareGodArceusThriceBlessedHolyGoat(int number, String name)
 	{
 		super(number, name);
+		setup();
+	}
+	
+	protected void setup()
+	{
+		this.setAttackPoints(5000000);
+		this.setCanEvolve(false);
+		this.setEnhancementModifier(.30);
+		this.setHealthPoints(1000000);
 	}
 	
 	public String fireBlast()

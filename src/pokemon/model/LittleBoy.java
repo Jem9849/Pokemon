@@ -2,9 +2,30 @@ package pokemon.model;
 
 public class LittleBoy extends Pokemon implements Fire
 {
+	protected void setup()
+	{
+		this.setAttackPoints(2);
+		this.setCanEvolve(false);
+		this.setEnhancementModifier(100.4324);
+		this.setHealthPoints(1);
+	}
+	
+	public LittleBoy()
+	{
+		super(345, "LittleBoy");
+		setup();
+	}
+	
+	public LittleBoy(String name)
+	{
+		super(345, name);
+		setup();
+	}
+	
 	public LittleBoy(int number, String name)
 	{
 		super(number, name);
+		setup();
 	}
 	
 	public String fireBlast()
