@@ -38,6 +38,6 @@ public class LittleBoy extends Pokemon implements Fire
 	}
 	public String flamePledge()
 	{
-		return "Fire is gone now, and all we are left with is radiation and rubble. We pledge to make them pay.";
+		return "Fire is gone now, and all we are left with is radiation and rubble. We pledge to make sure this never happened again.";
 	}
 }
