@@ -4,8 +4,8 @@ public class PokemonRunner
 {
 	public static void main (String [] args)
 	{
-		PokemonController skitty = new PokemonController();
-		skitty.start();
+		PokemonController app = new PokemonController();
+		app.start();
 	}
 
 }
