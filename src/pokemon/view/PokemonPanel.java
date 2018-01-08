@@ -58,6 +58,9 @@ public class PokemonPanel extends JPanel
 		
 		this.appController = appController;
 		
+		iconLabel = new JLabel ("", new ImageIcon(getClass().getResource("/pokemon/view/images/PokemonDefault.png")), 
+				JLabel.CENTER);
+		
 		healthLabel = new JLabel("5");
 		attackLabel = new JLabel("5");
 		nameLabel = new JLabel("5");
