@@ -24,20 +24,24 @@ public class PokemonController
 	public void buildPokedex()
 	{
 		
-		Pokemon poke = new Pokemon("Daramanta");
-		Pokemon poke2 = new Pokemon("FarmerWithAShotgun");
-		Pokemon poke3 = new Pokemon("Fluffalo");
-		Pokemon poke4 = new Pokemon("LittleBoy");
-		Pokemon poke5 = new Pokemon("MultiHyperRareGodArceusThriceBlessedHolyGoat");
-		Pokemon poke6 = new Pokemon("Skitty");
+		pokedex.add(new Daramanta());
+		pokedex.add(new FarmerWithAShotgun());
+		pokedex.add(new Skitty());
+		pokedex.add(new LittleBoy());
+		pokedex.add(new MultiHyperRareGodArceusThriceBlessedHolyGoat());
+		pokedex.add(new Fluffalo());
+	}
+	
+	public String [] convertPokedex()
+	{
+		String [] names = new String [pokedex.size()];
 		
+		for (int index = 0; index < pokedex.size(); index++)
+		{
+			names[index] = pokedex.get(index).getName();
+		}
 		
-		pokedex.add(poke);
-		pokedex.add(poke2);
-		pokedex.add(poke3);
-		pokedex.add(poke4);
-		pokedex.add(poke5);
-		pokedex.add(poke6);
+		return names;
 	}
 	
 		public List<Pokemon> getPokedex()
