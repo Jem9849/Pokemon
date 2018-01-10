@@ -51,9 +51,10 @@ public class PokemonPanel extends JPanel
 	public PokemonPanel(PokemonController appController)
 	{
 		super();
+		setBackground(Color.LIGHT_GRAY);
 		this.appController = appController;
 		appLayout = new SpringLayout();
-		iconLabel = new JLabel ("", new ImageIcon(getClass().getResource("/pokemon/view/images/PokemonDefault.png")), 
+		iconLabel = new JLabel ("", new ImageIcon(getClass().getResource("/pokemon/view/pictures/PokemonDefault.png")), 
 				JLabel.CENTER);
 		evolvableBox = new JCheckBox();
 		nameField = new JTextField("name");
@@ -83,7 +84,6 @@ public class PokemonPanel extends JPanel
 		setupListeners();
 		setupComboBox();
 		setupTypePanels();
-		updateTypePanels();
 	}
 	
 	private void setupComboBox()
@@ -182,6 +182,11 @@ public class PokemonPanel extends JPanel
 				thirdType.setBackground(Color.cyan);
 			}
 		}
+	}
+	
+	public void updateImage()
+	{
+		
 	}
 	
 	private void setupListeners()

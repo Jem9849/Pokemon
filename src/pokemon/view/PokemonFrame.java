@@ -13,7 +13,7 @@ public class PokemonFrame extends JFrame
 		super();
 		
 		this.appController = appController; 
-		//appPane = new PokemonPanel(appController);
+		appPanel = new PokemonPanel(appController);
 		
 		
 		setupFrame();
