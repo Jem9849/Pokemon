@@ -22,7 +22,7 @@ public class PokemonPanel extends JPanel
 	private JLabel evolvableLabel;
 	private JLabel modifierLabel;
 	private JLabel iconLabel;
-	private JLabel iconLabel_1;
+	//private JLabel iconLabel_1;
 	private JCheckBox evolvableBox;
 	private JTextField nameField;
 	private JTextField numberField;
@@ -88,11 +88,11 @@ public class PokemonPanel extends JPanel
 		
 		
 		evolvableLabel = new JLabel("5");
-		appLayout.putConstraint(SpringLayout.EAST, evolvableLabel, -142, SpringLayout.EAST, this);
+		
 		modifierLabel = new JLabel("5");
 		
 		
-		iconLabel_1 = new JLabel("5");
+		//iconLabel_1 = new JLabel("5");
 		
 		descriptionArea = new JTextArea(10, 25);
 		typeArea = new JTextArea(10, 25);
@@ -139,7 +139,7 @@ public class PokemonPanel extends JPanel
 		this.add(numberLabel);
 		this.add(evolvableLabel);
 		this.add(modifierLabel);
-		this.add(iconLabel_1);
+		//this.add(iconLabel_1);
 		this.add(saveButton);
 		this.add(clearButton);
 		this.add(nameField);
@@ -279,10 +279,6 @@ public class PokemonPanel extends JPanel
 		appLayout.putConstraint(SpringLayout.NORTH, numberLabel, 3, SpringLayout.NORTH, numberField);
 		appLayout.putConstraint(SpringLayout.WEST, numberLabel, 42, SpringLayout.WEST, this);
 		appLayout.putConstraint(SpringLayout.EAST, numberLabel, 0, SpringLayout.EAST, nameLabel);
-		appLayout.putConstraint(SpringLayout.NORTH, iconLabel_1, 66, SpringLayout.SOUTH, nameField);
-		appLayout.putConstraint(SpringLayout.SOUTH, iconLabel_1, -127, SpringLayout.SOUTH, this);
-		appLayout.putConstraint(SpringLayout.EAST, iconLabel_1, -104, SpringLayout.EAST, this);
-		appLayout.putConstraint(SpringLayout.WEST, iconLabel_1, 324, SpringLayout.WEST, saveButton);
 		appLayout.putConstraint(SpringLayout.NORTH, numberField, 0, SpringLayout.NORTH, pokedexDropdown);
 		appLayout.putConstraint(SpringLayout.NORTH, pokedexDropdown, 10, SpringLayout.NORTH, this);
 		appLayout.putConstraint(SpringLayout.WEST, pokedexDropdown, 158, SpringLayout.EAST, healthField);
@@ -302,6 +298,7 @@ public class PokemonPanel extends JPanel
 		appLayout.putConstraint(SpringLayout.WEST, clearButton, 29, SpringLayout.EAST, saveButton);
 		appLayout.putConstraint(SpringLayout.SOUTH, clearButton, 23, SpringLayout.NORTH, saveButton);
 		appLayout.putConstraint(SpringLayout.EAST, clearButton, 86, SpringLayout.EAST, saveButton);
+		appLayout.putConstraint(SpringLayout.EAST, evolvableLabel, -142, SpringLayout.EAST, this);
 	}
 		
 }
