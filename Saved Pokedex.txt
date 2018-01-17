@@ -1,0 +1,6 @@
+Macka,854,53,42,53.3,true
+FarmerWithAShotgun,964,1,1337,0.03,true
+Skitty,300,50,45,0.5,false
+LittleBoy,345,1,2,100.4324,false
+MultiHyperRareGodArceusThriceBlessedHolyGoat,5000,1000000,5000000,0.3,false
+Fluffalo,944,400,137,0.5,false

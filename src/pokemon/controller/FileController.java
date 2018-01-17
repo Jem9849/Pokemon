@@ -39,7 +39,7 @@ public class FileController
 				
 				String row = name + "," + number + "," + health + "," + attack + "," + modify + "," + evolve;
 				
-				
+				writeToDisk.println(row);
 			}
 			writeToDisk.close();
 		}
