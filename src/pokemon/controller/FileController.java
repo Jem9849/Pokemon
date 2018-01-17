@@ -7,6 +7,8 @@ import java.io.PrintWriter;
 import pokemon.model.Pokemon;
 import java.util.Scanner;
 
+
+
 public class FileController 
 {
 	public static void savePokemonToFile(ArrayList<Pokemon> pokedex)
