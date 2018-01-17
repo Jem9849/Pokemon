@@ -266,7 +266,7 @@ public class PokemonPanel extends JPanel
 							String name = nameField.getText();
 							boolean evolvable = evolvableBox.isSelected();
 							
-							//Send to the Controller to modify the Pokemon
+							//Send to the Controller to modify the Pokemon since the Vieww cannot see the model
 							appController.updateSelected(selected, health, attack, evolvable, modifier, name);
 						}
 					}
