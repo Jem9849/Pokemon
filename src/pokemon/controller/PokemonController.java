@@ -14,12 +14,10 @@ public class PokemonController
 	public PokemonController()
 	{
 		this.pokedex = new ArrayList<Pokemon>(6);
-		appFrame = new PokemonFrame(this);
-		
 		
 		buildPokedex();
 		
-		
+		appFrame = new PokemonFrame(this);
 	}
 	
 	public void start()
